@@ -1,0 +1,25 @@
+name: phone_number_and_sms_auto_fill
+description: This Plugin is created for E2 Info systems internal usage.
+version: 2.3.0
+
+environment:
+  sdk: '>=2.12.0 <3.0.0'
+  flutter: ">=1.22.0"
+
+dependencies:
+  pin_input_text_field: '>=4.2.0 <5.0.0'
+    #git:
+    #  url: https://github.com/TinoGuo/pin_input_text_field
+    #  ref: dev
+  flutter:
+    sdk: flutter
+
+# The following section is specific to Flutter.
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.venkat.phonenumberandsms
+        pluginClass: PhoneNumberAndSmsPlugin
+      ios:
+        pluginClass: PhoneNumberAndSmsPlugin
